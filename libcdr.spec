@@ -15,6 +15,7 @@ Source0:	http://dev-www.libreoffice.org/src/%{name}-%{version}.tar.xz
 BuildRequires:	doxygen
 BuildRequires:	libwpd-devel
 BuildRequires:	libwpg-devel
+BuildRequires:	pkgconfig(icu-uc)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(zlib)
 
