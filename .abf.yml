@@ -1,2 +1,4 @@
+removed_sources:
+  libcdr-0.0.12.tar.bz2: ca16b3710c2d53d13d8fc4f5ed333538f13598d6
 sources:
-  "libcdr-0.0.12.tar.bz2": ca16b3710c2d53d13d8fc4f5ed333538f13598d6
+  libcdr-0.0.14.tar.xz: da8554d17db86151da5591ab0da3235d3247ff2e
