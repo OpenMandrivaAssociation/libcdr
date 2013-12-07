@@ -6,7 +6,7 @@
 Summary:	A library providing ability to interpret and import Corel Draw drawings
 Name:		libcdr
 Version:	0.0.14
-Release:	2
+Release:	3
 Group:		System/Libraries
 License:	GPLv2+ or LGPLv2+
 Url:		http://www.freedesktop.org/wiki/Software/libcdr
