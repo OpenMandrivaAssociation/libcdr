@@ -5,12 +5,12 @@
 
 Summary:	A library providing ability to interpret and import Corel Draw drawings
 Name:		libcdr
-Version:	0.0.14
-Release:	7
+Version:	0.0.16
+Release:	1
 Group:		System/Libraries
 License:	GPLv2+ or LGPLv2+
-Url:		http://www.freedesktop.org/wiki/Software/libcdr
-Source0:	http://dev-www.libreoffice.org/src/%{name}-%{version}.tar.xz
+Url:		https://wiki.documentfoundation.org/DLP/Libraries/libcdr
+Source0:	http://dev-www.libreoffice.org/src/%{name}/%{name}-%{version}.tar.xz
 
 BuildRequires:	doxygen
 BuildRequires:	libwpd-devel
@@ -56,7 +56,9 @@ developing applications that use %{name}.
 %setup -q
 
 %build
-%configure2_5x \
+CFLAGS="%{optflags} -Qunused-arguments" \
+CXXFLAGS="%{optflags} -Qunused-arguments" \
+%configure \
 	--disable-static
     
 %make
