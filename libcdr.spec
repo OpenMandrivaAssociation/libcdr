@@ -55,11 +55,9 @@ developing applications that use %{name}.
 %setup -q
 
 %build
-#CFLAGS="%{optflags} -Qunused-arguments" \
-#CXXFLAGS="%{optflags} -Qunused-arguments" \
-%configure \
-	--disable-static
-    
+CFLAGS="%{optflags} -Qunused-arguments" \
+CXXFLAGS="%{optflags} -Qunused-arguments" \
+%configure
 %make
 
 %install
