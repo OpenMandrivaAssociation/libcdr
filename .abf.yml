@@ -1,4 +1,5 @@
 removed_sources:
   libcdr-0.0.16.tar.xz: 41536778ebce9e241f3c743ed90cc1aa7e1db41b
-sources:
   libcdr-0.1.0.tar.xz: e42dbf8cb4ac4271b38a6105a0c2e4c2259038f5
+sources:
+  libcdr-0.1.1.tar.xz: adc8cfeeed330763dbff5e933401b6a0d76b114b
