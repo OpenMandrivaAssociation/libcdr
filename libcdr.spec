@@ -18,6 +18,7 @@ BuildRequires:	pkgconfig(icu-uc)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	pkgconfig(librevenge-0.0)
+BuildRequires:  pkgconfig(cppunit)
 
 %description
 Libcdr is library providing ability to interpret and import Corel Draw
