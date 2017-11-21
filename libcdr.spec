@@ -10,7 +10,7 @@ Release:	2
 Group:		System/Libraries
 License:	GPLv2+ or LGPLv2+
 Url:		https://wiki.documentfoundation.org/DLP/Libraries/libcdr
-Source0:	http://dev-www.libreoffice.org/src/%{name}/%{name}-%{version}.tar.xz
+Source0:	http://dev-www.libreoffice.org/src/libcdr/%{name}-%{version}.tar.xz
 
 BuildRequires:	doxygen
 BuildRequires:	boost-devel
