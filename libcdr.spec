@@ -6,7 +6,7 @@
 Summary:	A library providing ability to interpret and import Corel Draw drawings
 Name:		libcdr
 Version:	0.1.6
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	GPLv2+ or LGPLv2+
 Url:		https://wiki.documentfoundation.org/DLP/Libraries/libcdr
@@ -58,11 +58,15 @@ developing applications that use %{name}.
 %build
 CFLAGS="%{optflags} -Qunused-arguments" \
 CXXFLAGS="%{optflags} -Qunused-arguments" \
-%configure
-%make
+%configure --disable-werror
+
+sed -i -e 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' \
+  -e 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
+
+%make_build
 
 %install
-%makeinstall_std 
+%make_install
 # these binaries do nothing currently
 rm -f %{buildroot}/%{_bindir}/cmx2*
 
