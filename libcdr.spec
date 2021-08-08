@@ -5,13 +5,12 @@
 
 Summary:	A library providing ability to interpret and import Corel Draw drawings
 Name:		libcdr
-Version:	0.1.6
-Release:	3
+Version:	0.1.7
+Release:	1
 Group:		System/Libraries
 License:	GPLv2+ or LGPLv2+
 Url:		https://wiki.documentfoundation.org/DLP/Libraries/libcdr
 Source0:	http://dev-www.libreoffice.org/src/libcdr/%{name}-%{version}.tar.xz
-Patch0:		libcdr-0.1.6-icu-68.patch
 
 BuildRequires:	doxygen
 BuildRequires:	boost-devel
