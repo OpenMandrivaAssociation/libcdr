@@ -1,12 +1,13 @@
 %define api	0.1
 %define major	1
-%define libname %mklibname cdr %{api} %{major}
+%define oldlibname %mklibname cdr %{api} %{major}
+%define libname %mklibname cdr
 %define devname %mklibname cdr -d
 
 Summary:	A library providing ability to interpret and import Corel Draw drawings
 Name:		libcdr
 Version:	0.1.7
-Release:	4
+Release:	5
 Group:		System/Libraries
 License:	GPLv2+ or LGPLv2+
 Url:		https://wiki.documentfoundation.org/DLP/Libraries/libcdr
@@ -36,6 +37,8 @@ Currently supported: XHTML, raw.
 %package -n %{libname}
 Summary:	A library providing ability to interpret and import Corel Draw drawings
 Group:		System/Libraries
+# Renamed after 5.0
+%rename %{oldlibname}
 
 %description -n %{libname}
 Libcdr is library providing ability to interpret and import Corel Draw
@@ -85,4 +88,3 @@ rm -f %{buildroot}/%{_bindir}/cmx2*
 %{_libdir}/%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
 %{_bindir}/cdr2xhtml
-
